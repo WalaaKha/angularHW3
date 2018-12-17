@@ -1,0 +1,17 @@
+<p>
+  Add product form!
+</p>
+  <div class="paddingDiv">Name: <input [(ngModel)]='name'/></div>
+  <div class="paddingDiv">Quantity: <input [(ngModel)]='quantity'/></div>
+  <div class="paddingDiv">Price: <input [(ngModel)]='price'/></div>
+  <div class="paddingDiv"><button (click)='addProduct()'>Add product</button></div>
+  <table class="tableStyle">
+    <tr>
+      <th>Product Name</th>
+      <th>Quantity</th>
+      <th>Price</th>
+    </tr>
+    <tbody id="productTableBody" [innerHtml] = "htmlString">
+      
+    </tbody>
+  </table>
